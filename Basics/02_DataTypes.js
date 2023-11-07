@@ -12,6 +12,8 @@ let age = 21 // Number Range - 2**53
 let isLoggedIn = true // Boolean
 let state; // Undefined
 let city = null // Null
+let arr = ["Hi","Hello"]  // Array -> Object
+let obj = {first:"Saransh",Second:"Sharma"} // Object
 
 // Big Int Rnage - More Than 2**53
 // Null (Stand Alone Value)
@@ -22,3 +24,4 @@ let city = null // Null
 console.log(typeof "Saransh") // String Type
 console.log(typeof null)  // Object Type
 console.log(typeof undefined) // Undefined Type
+
