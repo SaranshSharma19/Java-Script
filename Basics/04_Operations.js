@@ -12,6 +12,11 @@ console.log(2 / 3)
 console.log(2 % 3)
 console.log(2 ** 3)
 
+value++;
+console.log("Increment: ",value)
+value--;
+console.log("Decrement: ",value)
+
 let str1 = "Hello"
 let str2 = " Saransh"
 let str3 = str1 + str2
@@ -31,4 +36,6 @@ num1 = num2 = num3 = 2 + 2
 let gameCounter = 100
 ++gameCounter;
 console.log(++gameCounter);
+
+
 
