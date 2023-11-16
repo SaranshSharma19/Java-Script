@@ -34,14 +34,14 @@ console.log("---------------------------------------------")
 // Slice and Splice
 
 console.log("A",myArr);
-const myn1 = myArr.slice(1,3)
+const myn1 = myArr.slice(1,3) // End Index Not Included and it will not remove element from the original array also
 console.log(myn1)
 console.log("B",myArr);
 
 console.log()
 
 console.log("C",myArr);
-const myn2 = myArr.splice(1,3)
+const myn2 = myArr.splice(1,3)  // End Index Included and it will remove element from the original array also
 console.log(myn2)
 console.log("D",myArr);
 
