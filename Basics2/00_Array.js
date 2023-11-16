@@ -45,10 +45,14 @@ const myn2 = myArr.splice(1,3)  // End Index Included and it will remove element
 console.log(myn2)
 console.log("D",myArr);
 
+console.log("---------------------------------------------")
 
+var a = new Array("hi","Hello","Hey","Whatsup")
+console.log(a)
 
+var arr = new Array(3) // 3 is the size of array
 
-
-
-
-
+for(var g=0;g<3;g++){
+        arr[g] = `Hello ${g}`
+}
+console.log(arr)
