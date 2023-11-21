@@ -75,3 +75,13 @@ console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"))
 
+var student = [
+    {name: "Ram",age:21},
+    {name: "Shyam",age:22},
+    {name: "Ghanshyam",age:23}
+];
+
+console.log(student)
+for(var a=0; a<student.length; a++){
+    console.log(student[a].name + " " + student[a].age )
+}
