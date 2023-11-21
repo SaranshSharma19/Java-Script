@@ -69,3 +69,21 @@ JsUser1.greeting2  = function(){
 console.log(JsUser1.greeting);
 console.log(JsUser1.greeting());
 console.log(JsUser1.greeting2());
+
+var a = {
+    fname: "Saransh",
+    lname: "Sharma",
+    salary: function(){
+        return 25000;
+    },
+    fullname: function(){
+        return this.fname+ " " + this.lname
+    },
+    living: {
+        state: "Uttar Pradesh",
+        city: "Ghaziabad"
+    }
+}
+console.log(a.salary())
+console.log(a.fullname())
+console.log(a["living"]["state"])
