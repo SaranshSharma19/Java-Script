@@ -62,3 +62,33 @@ console.log(element)
 
 */
 
+var element;
+element = document.getElementById("header").innerText = "<h1>WOW</h1>"
+console.log(element)
+
+element = document.getElementById("header").innerHTML = "<h1>WOW</h1>"
+console.log(element)
+
+element = document.getElementById("content").setAttribute("class","saransh")
+console.log(element)
+
+element = document.getElementById("header").getAttribute("class")
+console.log(element)
+
+element = document.getElementById("content").setAttribute("style","border: 10px dotted yellow")
+console.log(element)
+
+element = document.getElementById("header").getAttribute("style")
+console.log(element)
+
+element = document.getElementById("content").attributes[1].value="xyz"
+console.log(element)
+
+element = document.getElementById("header").getAttribute("class")
+console.log(element)
+
+element = document.getElementById("content").removeAttribute("style")
+console.log(element)
+
+element = document.getElementById("header").getAttribute("class")
+console.log(element)
