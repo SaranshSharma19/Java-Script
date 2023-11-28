@@ -35,3 +35,25 @@ console.log(element)
 document.querySelector("#content").classList.remove("hello4", "hello5");
 element = document.querySelector("#content").classList;
 console.log(element)
+
+// Length
+console.log(document.querySelector("#content").classList.length)
+
+// toggle
+document.getElementById("header").addEventListener("click",efg);
+
+function efg(){
+    document.getElementById("header").classList.toggle("xyz")
+
+    var a = document.getElementById("header").classList;
+    console.log(a)
+}
+
+console.log(document.querySelector("#content").classList)
+
+// item
+console.log(document.getElementById("header").classList.item[0])
+
+
+// Contains
+console.log(document.getElementById("content").classList.contains("Hello1"))
