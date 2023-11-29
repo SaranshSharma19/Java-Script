@@ -5,5 +5,11 @@ console.log(copyElement)
 var copyElement = target.cloneNode(true);  // copy only attributre and tag name with inner Value when set to True
 console.log(copyElement)
 
-
 document.getElementById("list2").appendChild(copyElement)
+
+
+var parentElement = document.getElementById("list1");
+var target = document.getElementById("abc")
+var find = parentElement.contains(target)
+console.log(find)
+
