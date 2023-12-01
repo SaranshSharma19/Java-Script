@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+  
+<body>
+    <button onclick="windowOpen()">Open Window</button>
+    <button onclick="windowClose()">Close Window</button>
+    <button onclick="moveWindow()">moveTo Window</button>
+    <button onclick="moveWindowBy()">MoveBy Window</button>
+    <button onclick="resizeWindow()">ResizeTo Window</button>
+    <button onclick="resizeWindowBy()">ResizeBy Window</button>
+    <script> 
+        let Window; 
+        function windowOpen(){ 
+            Window = window.open( 
+                "", 
+                "_blank", "width=400, height=300,left=100px, top=200px"); 
+            Window.document.write("<p>This is my window</p>")
+        } 
+        function windowClose() { 
+            Window.close(); 
+        } 
+        function moveWindow(){
+            Window.moveTo(100,100);
+            Window.focus();
+        }
+        function moveWindowBy(){
+            Window.moveBy(250,250);
+            Window.focus();
+        }
+        function resizeWindow(){
+            Window.resizeTo(500,600);
+            Window.focus();
+        }
+        function resizeWindowBy(){
+            Window.resizeBy(600,600);
+            Window.focus();
+        }
+    </script> 
+</body> 
+  
+</html> 
