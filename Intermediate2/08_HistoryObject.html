@@ -1,0 +1,38 @@
+<!--
+    History Object Property - 
+    1 - Length
+
+    History Object Methods - 
+    1 - back()
+    2 - forward()
+    3 - go()
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object</title>
+</head>
+<body>
+    <h1>Java Script History Object</h1>
+    <button onclick="backFunction()">Back</button>
+    <button onclick="forwardFunction()">Forward</button>
+    <button onclick="goFunction()">Go</button>
+    <script>
+        console.log(history)
+        console.log(history.length)
+        function backFunction(){
+            history.back();
+        }
+        function forwardFunction(){
+            history.forward();
+        }
+        function goFunction(){
+            history.go(1);  // 1 Page aage jeyga
+            // history.go(-1) 1 Page peeche jeyga
+        }
+    </script>
+</body>
+</html>
