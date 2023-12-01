@@ -1,0 +1,50 @@
+<!-- 
+
+    URL Bar, Loaction Bar
+    Location Object Properties - 
+    1 - hash
+    2 - host
+    3 - hostname
+    4 - href
+    5- origin
+    6 - pathname
+    7 - port
+    8 - protocol
+    9 - search
+
+    Location Object Methods - 
+    1 - Assign()
+    2 - Reload()
+    3 - Replace()
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location OBject</title>
+</head>
+<body>
+    <h1>JavaScript Location Object</h1>
+    <button onclick="newFunction()">Click</button>
+    <script>
+        console.log(location)
+        console.log(location.host)
+        console.log(location.hostname)
+        console.log(location.href)
+        console.log(location.port)
+        console.log(location.protocol)
+        console.log(location.hash)
+        console.log(location.search)
+        function newFunction(){
+            location.reload();
+            location.assign("https://google.com")
+            location.replace("https://google.com")
+        }
+
+        // location.href = "https://saranshsharma#first?page=one"
+        // console.log(location)
+    </script>
+</body>
+</html>
