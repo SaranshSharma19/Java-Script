@@ -1,0 +1,48 @@
+<!---
+
+    window.open(url,name,specs)
+    url - website link
+    name - anyName OR _blank, _parent, _self(iframe), _top(frameset)
+    specs - width, height, left, top
+
+--->
+
+<!DOCTYPE html> 
+<html> 
+  
+<body style="display: flex;  
+            flex-direction: column; 
+            justify-content:center; 
+            align-items:center;"> 
+    <div class="container" 
+         style="position: relative; 
+                text-align: center;"> 
+        <h1 style="color: rgb(212, 255, 0);"> 
+            Leetcode 
+        </h1> 
+        <h3> window open and close method</h3> 
+        <button onclick="windowOpen()"> 
+            Open 
+        </button> 
+        <button onclick="windowClose()"> 
+            Close
+        </button> 
+    </div> 
+    <script> 
+        let Window; 
+          
+        // Function that open the new Window 
+        function windowOpen() { 
+            Window = window.open( 
+                "https://leetcode.com/problemset/all/", 
+                "_blank", "width=400, height=300, top=230, left=540"); 
+        } 
+          
+        // function that Closes the open Window 
+        function windowClose() { 
+            Window.close(); 
+        } 
+    </script> 
+</body> 
+  
+</html> 
