@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetTop & offsetLeft</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #box{
+            background: pink;
+            width: 300px;
+            height: 350px;
+            border: 2px solid black;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit perspiciatis officia, ad dolore minus. Quasi dignissimos ipsam animi unde delectus, labore nihil voluptas voluptate dolore maiores illo corporis similique sint saepe, reiciendis harum ratione nostrum. Perspiciatis, saepe enim explicabo ipsa veritatis ullam quam nostrum, repudiandae vero a dicta magnam corrupti. Eligendi, facere. Architecto at nihil consequuntur accusantium? Officia architecto molestiae unde, maiores cum quidem quisquam iusto explicabo incidunt, id eveniet sed tempore ipsa nemo, provident necessitatibus reiciendis libero! Nemo, repellat corrupti. Optio, ratione cumque maiores omnis minima nihil eveniet velit eum quaerat voluptas soluta impedit nulla quas assumenda itaque.
+    </div>
+
+    <script>
+        var box = document.querySelector("#box");
+        console.log("Box offsetTop : " + box.offsetTop);
+        console.log("Box offsetLeft : " + box.offsetLeft);
+
+    </script>
+</body>
+</html>
