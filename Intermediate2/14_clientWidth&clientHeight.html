@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrollTop & scrollLeft</title>
+    <style>
+        #box{
+            background: orange;
+            width: 300px;
+            height: 300px;
+            border: 10px solid;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Java Script clientWidth& clientHeight</h2>
+    <div id="box"></div>
+    <script>
+        var target = document.querySelector("#box")
+        console.clear()
+        console.log("offsetWidth : "+ target.clientWidth)
+        console.log("offsetHeight : "+ target.clientHeight)
+
+    </script>
+</body>
+</html>
