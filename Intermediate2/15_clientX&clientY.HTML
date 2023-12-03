@@ -1,0 +1,34 @@
+<!-- 
+    Mouse Property
+    It will run with MOuse Events - 
+    1 - onclick
+    2 - ondblclick
+    3 - oncontextmenu
+    4 - onmousemove
+    5 - onmouseenter
+    6 - onmouseleave
+    7 - onmouseout
+    8 - onmouseover
+    9 - onmousedown
+    10 - onmouseup
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientX and clientY</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('mousemove',function(e){
+            console.clear()
+            var x = e.clientX;
+            var y = e.clientY;
+            console.log("clientX : " + x)
+            console.log("clientY : " + y)
+        })
+    </script>
+</body>
+</html>
