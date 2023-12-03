@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screenX & screenY</title>
+</head>
+<body>
+    <h1>screenX & screenY</h1>
+    <script>
+        document.addEventListener('mousemove',function(e){
+            console.clear()
+            var x = e.screenX;
+            var y = e.screenY;
+            
+            var x1 = e.clientX;
+            var y1 = e.clientY;
+            console.log("screenX : "+ x);
+            console.log("clientX : "+ x1);
+
+            console.log("screenY : "+ y);
+            console.log("clientY : "+ y1);
+        })
+    </script>
+</body>
+</html>
