@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetX & offsetY</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 50px;
+            margin: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var target = document.querySelector("#box")
+        target.addEventListener('mousemove',function(e){
+            console.clear()
+            var x = e.offsetX;
+            var y = e.offsetY;
+    
+            console.log("offsetX : "+ x);
+            console.log("offsetY : "+ y);
+        })
+    </script>
+</body>
+</html>
