@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #myinput{
+            font-size: 21px;
+            padding: 10px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Java Script ClipBoard Events</h2>
+
+    <input type="text" id="myinput">
+
+    <script>
+        var target = document.querySelector("#myinput");
+        target.addEventListener('copy',function(){
+            console.clear()
+            console.log("You Copied Text.")
+            target.style.backgroundColor = "lightblue";
+        })
+        target.addEventListener('cut',function(){
+            console.clear()
+            console.log("You Cut Text.")
+            target.style.backgroundColor = "Red";
+        })
+        target.addEventListener('paste',function(){
+            console.clear()
+            console.log("You Pasted Text.")
+            target.style.backgroundColor = "Green";
+        })
+    </script>
+
+</body>
+</html>
