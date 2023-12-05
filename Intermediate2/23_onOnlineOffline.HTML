@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnOnline, OnOffline</title>
+    <style>
+        #box{
+            width: 500px;
+            height: 400px;
+            background: lightyellow;
+            font-size: 40px;
+            font-weight: bold;
+            border: 5px solid #4e4e4e;
+        }
+    </style>
+</head>
+<body onoffline="offlineFunction()">
+    <div id="box"></div>
+    <script>
+        var target = document.querySelector("#box")
+        // window.addEventListener('offline',function(){
+        //     target.innerHTML = "You Are Offline";
+        //     target.style.backgroundColor = "pink";
+        // })
+        // window.addEventListener('online',function(){
+        //     target.innerHTML = "You Are Online";
+        //     target.style.backgroundColor = "lightblue";
+        // })
+        function offlineFunction(){
+            target.innerHTML = "You Are Offline";
+            target.style.backgroundColor = "pink";
+        }
+        window.addEventListener('online',function(){
+            target.innerHTML = "You Are Online";
+            target.style.backgroundColor = "lightblue";
+        })
+
+    </script>
+</body>
+</html>
