@@ -1,0 +1,58 @@
+<!--
+    Key Board Event Property
+    It Works With onkeydown only
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Board Event</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="text" id="myinput"></div> -->
+    <div id="box"></div>
+
+    <script>
+        // var target = document.querySelector("#myinput");
+        // target.addEventListener('keydown',function(e){
+        //     console.clear()
+        var left = 0
+        var up = 0
+        document.querySelector("body").addEventListener('keydown',function(e){
+            console.clear()
+            switch (e.key){
+                case "ArrowUp":
+                    up = up - 5;
+                    break;
+                case "ArrowLeft":
+                    left = left - 5;
+                    break;
+                case "ArrowDown":
+                    up = up + 5;
+                    break;
+                case "ArrowRight":
+                    left = left + 5;
+                    break;
+                default:
+                    console.log("Other Key Pressed")
+                    break;
+            }
+            console.log("Left : ",left)
+            console.log("Up : ",up)
+
+            var target = document.querySelector("#box");
+            target.style.marginLeft = left + "px";
+            target.style.marginTop = up + "px";
+        });
+    </script>
+</body>
+</html>
