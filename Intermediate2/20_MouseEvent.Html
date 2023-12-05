@@ -1,0 +1,47 @@
+<!--
+    Mouse Event Property
+    It Works With onmousedown only
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            background: pink;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        var target = document.querySelector("#box");
+        target.addEventListener('mousedown',function(e){
+            console.clear()
+            var text = `You Pressed Button ${e.button}`
+            var t = e.button;
+
+            switch (t){
+                case 0:
+                    target.style.background = "red"
+                    break;
+                case 1:
+                    target.style.background = "green"
+                    break;
+                case 2:
+                    target.style.background = "blue"
+                    break;
+            }
+            console.log(text);
+        })
+    </script>
+</body>
+</html>
