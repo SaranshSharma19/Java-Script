@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CtrlKey, ShiftKey, AltKey, MetaKey</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            background: pink;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <input type="text" id="mybox">
+    <script>
+        // var target = document.querySelector("#box");
+        // target.addEventListener('click',function(e){
+        //     console.clear()
+            // var ctrl = e.ctrlKey;
+            // if (ctrl){
+            //     console.log("You Pressed Control Key")
+            // }
+            // else{
+            //     console.log("You Not Pressed Control Key")
+            // }
+
+            // var shift = e.shiftKey;
+            // if (shift){
+            //     console.log("You Pressed Shift Key")
+            // }
+            // else{
+            //     console.log("You Not Pressed Shift Key")
+            // }
+
+            // var alt = e.altKey;
+            // if (alt){
+            //     console.log("You Pressed Alt Key")
+            // }
+            // else{
+            //     console.log("You Not Pressed Alt Key")
+            // }
+
+            // var meta= e.metaKey;
+            // if (meta){
+            //     console.log("You Pressed Meta Key")
+            // }
+            // else{
+            //     console.log("You Not Pressed Meta Key")
+            // }
+            var target = document.querySelector("#mybox");
+            target.addEventListener('keydown',function(e){
+            console.clear()
+
+            var k;
+
+            switch(true){
+                case e.metaKey:
+                    k="MetaKey"
+                    break;
+                case e.altKey:
+                    k="AltKey"
+                    break;
+                case e.shiftKey:
+                    k="ShiftKey"
+                    break;
+                case e.ctrlKey:
+                    k="CtrlKey"
+                    break;
+                default:
+                    k = "No Key Pressed";
+                    break;
+            }
+            console.log(k)
+        });
+    </script>
+</body>
+</html>
