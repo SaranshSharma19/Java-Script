@@ -1,0 +1,65 @@
+<!--
+
+    AJAX - Asynchronouse JavaScript and XML
+    AJAX is a technique for creating fast and dynamic web pages.
+
+
+                Request---
+    client ------------------------- server
+                ---Response
+
+    XMLHttpRequest - Text File, XML Data, JSON Data
+
+    5 Steps - readyState
+    0 step - request not initialized
+    1 step - server connection establish
+    2 - request received
+    3 - processing request
+    4 - request finished and response is ready
+
+    Response - responseText, responseXML
+    Status - 200 - "Ok", 403 - "Forbidden", 404 - "Not Found"
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status==200){
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET","Filename.txt",true);
+               Method, FileName, async mode
+    xhttp.send();
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <p id="demo">Here We Load Data</p>
+    <button onclick="loadData()">Click</button>
+
+    <script>
+        function loadData(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    console.log(this.responseText);
+                }
+                else if(this.readyState == 4 && this.status == 404){
+                    document.getElementById("demo").innerHTML = "File Not Found";
+                }
+                else if(this.readyState == 4 && this.status == 403){
+                    document.getElementById("demo").innerHTML = "Forbidden";
+                }
+            }
+            xhttp.open("GET","https://jsonplaceholder.typicode.com/albums",true)
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
