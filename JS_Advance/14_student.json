@@ -2,11 +2,16 @@
     {
         "name" : "Saransh Sharma",
         "age" : "21",
-        "city" : "Goa"
+        "city" : "Ghaziabad"
     },
     {
         "name" : "Lavanaya Shankar",
         "age" : "22",
         "city" : "Agra"
+    },
+    {
+        "name" : "Tushar Messi",
+        "age" : "28",
+        "city" : "Chennai"
     }    
 ]
